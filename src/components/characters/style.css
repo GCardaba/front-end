@@ -1,0 +1,27 @@
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+/* Tarjeta */
+.character-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+/* Nombre del personaje */
+.character-card h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Texto */
+.character-card p {
+  font-size: 14px;
+  margin: 2px 0;
+}
