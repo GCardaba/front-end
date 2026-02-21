@@ -12,31 +12,32 @@ Asegúrate de tener instalado:
 
 Para comprobarlo:
 
-bash
+```bash
 node -v
 npm -v
+```
 
 
 ### macOS
 
 Si tienes Homebrew instalado:
 
-bash
+```bash
 brew install node
-
+```
 
 ### Linux (Debian/Ubuntu)
 
-bash
+```bash
 sudo apt update
 sudo apt install nodejs npm
-
+```
 
 ### Linux (Arch)
 
-bash
+```bash
 sudo pacman -S nodejs npm
-
+```
 
 ---
 
@@ -44,10 +45,11 @@ sudo pacman -S nodejs npm
 
 Desde la carpeta raíz del proyecto:
 
-bash
+```bash
+
 npm install
 npm install axios
-
+```
 
 Este comando instalará todas las dependencias necesarias definidas en
 package.json y npm install axios instalará axios.
@@ -56,9 +58,9 @@ package.json y npm install axios instalará axios.
 
 ## Ejecutar en modo desarrollo
 
-bash
+```bash
 npm run dev
-
+```
 
 Esto iniciará el servidor de desarrollo. Normalmente podrás abrir la app en:
 
@@ -72,10 +74,10 @@ http://localhost:5173
 
 ## Resumen rápido de comandos
 
-bash
+```bash
 npm install      # instalar dependencias
 npm run dev      # ejecutar en desarrollo
-
+```
 
 ---
 
@@ -90,3 +92,7 @@ Hice push a la rama MASTER ya que mi entorno de trabajo utilizado para resolver 
 
 ## Tipos
 Debido al escaso tiempo de la práctica, el tediosidad de trabajo que es, el poco aprendizaje que este aporta, y lo mas importante permiso previo del profesor, transformé el objeto json que devuelve la api para en endpoint '/people/{}' con el uso de [chatgpt](https://chatgpt.com/share/69999a46-3be0-8004-8452-7e495d558ab7).
+
+## Programacion 
+Durante el desarrollode la praáctica me enfrenté a varios problemas como: 
+Al principio entendí que el enpoint de la api que debiamos usar era https://swapi.dev/api/people/{}, e vez de https://swapi.dev/api/people?page={}, lo que implica que mi programa al principio iba a recibir un contador, el cual se multiplicaria x10 y se harian las 10 peticiones correspondientes en vez de recibir un array de personajes.

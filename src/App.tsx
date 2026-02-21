@@ -4,7 +4,6 @@ import './App.css'
 import { CharacterList  } from "./components/characters";
 import {ErrorMsg} from "./components/ErrorMsg";
 import { Loader } from "./components/Loader";
-
 import type { CharacterT } from "./types";
 import { api } from "./api/api";
 
@@ -13,7 +12,6 @@ const App = () => {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [next, setNext] = useState<string | null>(null);
-
   const [num, setNum] = useState<number>(1);
 
 
